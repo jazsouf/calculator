@@ -19,6 +19,20 @@
 
 body {
   min-height: 100vh;
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+footer {
+  color: white;
+  opacity: 0.5;
 }
 
 /* responsive images/videos */
@@ -55,14 +69,14 @@ body {
 }
 
 .screen {
-  height: 15vw;
+  height: 10vw;
   margin-top: 1em;
   width: 90%;
   background-color: rgb(222, 200, 172);
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  justify-content: center;
+  justify-content: space-between;
   padding-right: 1em;
   border-radius: 10px;
 }
@@ -72,7 +86,7 @@ body {
 }
 
 .result-line {
-  font-size: calc(0.5em + 5.5vw);
+  font-size: calc(0.5em + 5vw);
 }
 
 .btns {
@@ -93,20 +107,35 @@ body {
 }
 
 .clear-btn:hover,
+.clear-btn:focus,
 .delete-btn:hover,
-.number-btn:hover {
+.delete-btn:focus,
+.number-btn:hover,
+.number-btn:focus,
+.symbol-btn:hover,
+.symbol-btn:focus,
+.equal-btn:hover,
+.equal-btn:focus,
+.dot-btn:hover,
+.dot-btn:focus {
   mix-blend-mode: difference;
 }
 
 .clear-btn:active,
 .delete-btn:active,
-.number-btn:active {
+.number-btn:active,
+.symbol-btn:active,
+.equal-btn:active,
+.dot-btn:active {
   mix-blend-mode: color-dodge;
 }
 
 .clear-btn,
 .delete-btn,
-.number-btn {
+.number-btn,
+.symbol-btn,
+.equal-btn,
+.dot-btn {
   width: 100%;
   border: none;
   border-radius: 10px;
